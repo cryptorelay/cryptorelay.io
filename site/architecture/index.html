@@ -1,0 +1,629 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>Architecture - Next Gen Crypto Exchange</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Next Gen Crypto Exchange" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Next Gen Crypto Exchange
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Architecture
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Next Gen Crypto Exchange" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Next Gen Crypto Exchange
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Architecture
+      </label>
+    
+    <a href="./" title="Architecture" class="md-nav__link md-nav__link--active">
+      Architecture
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="确定性" class="md-nav__link">
+    确定性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="纯函数" class="md-nav__link">
+    纯函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="源头重放" class="md-nav__link">
+    源头重放
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="高可用" class="md-nav__link">
+    高可用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-vs-pull" title="Push vs Pull" class="md-nav__link">
+    Push vs Pull
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="快照" class="md-nav__link">
+    快照
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="幂等" class="md-nav__link">
+    幂等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" title="流水线" class="md-nav__link">
+    流水线
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="过载保护" class="md-nav__link">
+    过载保护
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="请求优先级" class="md-nav__link">
+    请求优先级
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="实现机制" class="md-nav__link">
+    实现机制
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" title="资产模块" class="md-nav__link">
+    资产模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" title="对账" class="md-nav__link">
+    对账
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../api/" title="API Docs" class="md-nav__link">
+      API Docs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../benchmarks/" title="Benchmarks" class="md-nav__link">
+      Benchmarks
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="确定性" class="md-nav__link">
+    确定性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="纯函数" class="md-nav__link">
+    纯函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="源头重放" class="md-nav__link">
+    源头重放
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="高可用" class="md-nav__link">
+    高可用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#push-vs-pull" title="Push vs Pull" class="md-nav__link">
+    Push vs Pull
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" title="快照" class="md-nav__link">
+    快照
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" title="幂等" class="md-nav__link">
+    幂等
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" title="流水线" class="md-nav__link">
+    流水线
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" title="过载保护" class="md-nav__link">
+    过载保护
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" title="请求优先级" class="md-nav__link">
+    请求优先级
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" title="实现机制" class="md-nav__link">
+    实现机制
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" title="资产模块" class="md-nav__link">
+    资产模块
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" title="对账" class="md-nav__link">
+    对账
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">交易系统架构</h1>
+<h2 id="_2">确定性</h2>
+<ul>
+<li>
+<p>交易系统的逻辑是一个确定性的规则，从撮合到清算到行情计算，整个系统是从输入到输出的纯函数，任何时候给定相同的输入，总能得到相同的输出。</p>
+<p>整个系统都可以看作是输入数据的衍生数据。</p>
+</li>
+<li>
+<p>输入是所有用户的下单请求序列(下单和撤单)，输出是成交记录、资产变更、行情变化等。</p>
+</li>
+<li>
+<p>确定性意味着：</p>
+<ul>
+<li>请求的顺序必须是确定的。</li>
+<li>计算过程中不能依赖其他副作用（比如本地时钟，随机数等等），尤其是生成一些唯一ID的时候要特别注意，生成逻辑必须只跟输入有关。</li>
+</ul>
+</li>
+<li>
+<p>确定性是后面整个架构设计的前提。</p>
+</li>
+</ul>
+<h2 id="_3">纯函数</h2>
+<p>确定性用函数式编程的语言来说就是纯函数。</p>
+<p>撮合函数的输入是下单和撤单请求流，它的输出是什么是一个有趣的问题，我认为可以定义为一次下单的Taker和成交的Maker列表。
+后续的所有逻辑，包括订单入库和状态变更，成交记录->K线行情，用户资产清算，只需要依赖这一个输入就都能够满足。</p>
+<pre><code class="haskell">match :: Order -&gt; State OrderBook [(Taker, [Maker])]
+</code></pre>
+
+<h2 id="_4">源头重放</h2>
+<p>在做到确定性的前提下，任何时候把历史输入重新跑一遍即可重现当前状态(以及历史中任何时刻的状态)。意味着计算节点就算不做任何持久化，故障也不会引起任何数据丢失。</p>
+<h2 id="_5">高可用</h2>
+<ul>
+<li>
+<p>计算节点的高可用</p>
+<p>计算节点的逻辑是确定性的，相同的输入总是产生相同的输出，所以可以很容易起多个同时执行，下游节点选择其中任何一个进行订阅，都能得到相同的结果。缺点是前端必须另外有一个确定性的输入流，意味着撮合引擎前面需要放置一个日志型消息组件。</p>
+<p>或者采用主从复制加failover的模式，撮合引擎直接接收前端消息，自己实现复制和failover机制，比上面方案能提供更低的延迟。</p>
+</li>
+</ul>
+<h2 id="push-vs-pull">Push vs Pull</h2>
+<p>计算节点和结果流是一体，还是分离？</p>
+<p>一般开发团队为了省事重用现有消息组件，会选择分离的方案，也就是计算节点需要主动把结果Push给外部消息组件。</p>
+<p>但是这样就要考虑Push出去的消息是否丢失的问题（比如使用kafka就意味着配置ack=all以及retres=MAX_VALUE等等），最重要的是Push模式下，节点记录的最后一个成功消费的输入ID，必须保证是Push成功过的，只有做到这一点，Push模式才是可靠的。</p>
+<p>Pull模式就是计算节点需要自己实现一个输出流，供下游节点主动订阅，从可靠性以及低延迟的角度，显然还是Pull模式要更靠谱一些，Pull模式实现上难度更大，但这对我们来说不是问题。</p>
+<h2 id="_6">快照</h2>
+<p>为了加快故障恢复的时间，计算节点还是要对自身状态进行快照持久化。状态中需要包含对输入处理的当前进度，故障恢复时只需要从上次的进度继续执行即可。</p>
+<h2 id="_7">幂等</h2>
+<p>当上游节点发生故障恢复或者failover的时候，下游节点会遇到消息重复消费的情况，也就是所有计算节点需要做到幂等。</p>
+<p>当我们的输入是确定且有序时，可以给他们附带严格有序递增的ID，下游节点只需要记录处理过的最后一个ID，即可实现幂等。</p>
+<h2 id="_8">流水线</h2>
+<p>同样因为对确定性的要求，计算节点很难通过水平扩展提升吞吐量，只能尽可能以多线程流水线式的处理，充分利用多核计算性能。</p>
+<h2 id="_9">过载保护</h2>
+<p>请求量超过系统处理能力后，需要主动拒绝请求，否则排队队列太长，延迟飙升。这个需要跟踪当前消费进度以及队列长度，由前端(是后端的前端，不是前端那个前端)进行判断。</p>
+<h2 id="_10">请求优先级</h2>
+<p>在排队的时候，不同交易请求可以有优先级的区别，比如撤单请求的优先级应该高过下单，高价值的单优先等等。优先级高的请求能插队。插队位置只能插在未消费过的位置。</p>
+<h2 id="_11">实现机制</h2>
+<ul>
+<li>
+<p>基于日志的队列有kafka和redis
+    stream，但是一些高级功能(比如请求优先级)并没有，需要自己定制实现。</p>
+</li>
+<li>
+<p>因为一些计算节点必须顺序执行(撮合)，必须充分发挥单机甚至单核的计算能力，这方面C/C++依然是最佳选择。</p>
+<p>针对这个场景Redis
+Module是一个不错的选择，能够复用redis本身的协议以及持久化和replication机制，方便提供查询的接口，自动就有了读写分离的能力。节点之间也可以通过redis
+stream可靠地传输数据。</p>
+<p>性能方面要再上一层，Redis本身还是太过单线程，如果专门写一个share
+nothing的多线程流水线结构的服务，肯定还能进一步提升吞吐量，这方面c++的
+<a href="http://seastar.io">seastar</a> 框架是个不错的选择。</p>
+</li>
+<li>
+<p>关系数据库</p>
+<p>关系数据库虽然慢，但是真香。关系数据库的特点是单核性能很一般，但是能够垂直扩展。可以用来存储历史流水记录供查询用，包括订单历史、成交记录、资金流水，这些可以根据时间自动分表，甚至使用timescaledb这种专门针对时序数据的插件，可以提供强大的插入吞吐量。用户资产表也可以考虑放。</p>
+</li>
+</ul>
+<h2 id="_12">资产模块</h2>
+<p>以上整套系统都是按照币对分区的，但是用户资产余额的存储只能按照币或用户ID分区，中间的Worker需要处理两头分区的交错。</p>
+<p>Worker的基本工作思路还是一样，订阅上游流的输出，过滤出感兴趣的那个币相关的资产变更信息。
+在一个事务里面，批量修改用户资产数据，同时记录上游消费记录。</p>
+<p>Worker的数量可以与下游分区对应，这样意味着一个Worker可能需要同时订阅多个上游流，这样的好处是下游操作不存在并发。
+另一方面也可以与上游分区对应，一个币对对应两个Worker，这样多个Worker会并发访问下游存储，也问题不大，注意对user_id排个序，防止死锁。
+关系数据库能够很好的处理并发访问，所以倾向于第二个方案，尤其是考虑到不同币对的user_id重合度不高。</p>
+<p>充值/提现当作一个独立的输入流来处理，处理逻辑类似。</p>
+<p>这样不同的输入流之间是并发处理的，但是并不存在问题，原因有两个：</p>
+<p>1、所有数据库操作都做成自增自减的形式，在read commited事务隔离模式下是原子的。
+2、提现和下单都有个提前冻结的操作，后续操作都只会造成可用余额的增加或者不变，所以不会出现可用余额为负数的情况。</p>
+<p>特殊账户(手续费账户)由于是并发热点，可以由独立的worker单独批量处理。</p>
+<h2 id="_13">对账</h2>
+<p>对账的目的是对程序计算结果的验算，一方面是对撮合本身的输出进行校验，另一方面是对资产计算结果的校验。
+Coming soon...</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../api/" title="API Docs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                API Docs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

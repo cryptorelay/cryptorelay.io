@@ -1,0 +1,8 @@
+site_name: Next Gen Crypto Exchange
+theme:
+  name: 'material'
+nav:
+    - Home: index.md
+    - Architecture: architecture.md
+    - API Docs: api.md
+    - Benchmarks: benchmarks.md
