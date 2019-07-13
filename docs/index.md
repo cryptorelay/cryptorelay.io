@@ -17,5 +17,6 @@
 ## Read more:
 
 * [Technical Architecture](architecture.md)
-* [API Docs](api.md)
+* [Restful API Docs](rest-api.html)
+* [WebSockets API Docs](ws.md)
 * [Benchmarks](benchmarks.md)
