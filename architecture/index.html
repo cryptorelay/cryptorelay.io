@@ -244,6 +244,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#vs" title="批量 vs 单条" class="md-nav__link">
+    批量 vs 单条
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_6" title="快照" class="md-nav__link">
     快照
   </a>
@@ -316,8 +323,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../api/" title="API Docs" class="md-nav__link">
-      API Docs
+    <a href="../rest-api.html" title="Restful API Docs" class="md-nav__link">
+      Restful API Docs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ws/" title="WebSockets API Docs" class="md-nav__link">
+      WebSockets API Docs
     </a>
   </li>
 
@@ -385,6 +404,13 @@
         <li class="md-nav__item">
   <a href="#push-vs-pull" title="Push vs Pull" class="md-nav__link">
     Push vs Pull
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs" title="批量 vs 单条" class="md-nav__link">
+    批量 vs 单条
   </a>
   
 </li>
@@ -464,13 +490,14 @@
                 
                 <h1 id="_1">交易系统架构</h1>
 <h2 id="_2">确定性</h2>
+<p>对于交易系统架构设计来说，交易系统最重要的特点是确定性。我们要对一个规则确定，不能出错的逻辑，用分布式的方式实现它，以达到高性能和高可用的目的。</p>
 <ul>
 <li>
-<p>交易系统的逻辑是一个确定性的规则，从撮合到清算到行情计算，整个系统是从输入到输出的纯函数，任何时候给定相同的输入，总能得到相同的输出。</p>
+<p>确定性意味着从撮合到清算到行情计算，整个系统是从输入到输出的纯函数，任何时候给定相同的输入，总能得到相同的输出。</p>
 <p>整个系统都可以看作是输入数据的衍生数据。</p>
 </li>
 <li>
-<p>输入是所有用户的下单请求序列(下单和撤单)，输出是成交记录、资产变更、行情变化等。</p>
+<p>输入是所有用户的下单请求序列(下单，撤单，充值，提现等等)，输出是成交记录、资产变更、行情变化等。</p>
 </li>
 <li>
 <p>确定性意味着：</p>
@@ -505,6 +532,9 @@
 <p>一般开发团队为了省事重用现有消息组件，会选择分离的方案，也就是计算节点需要主动把结果Push给外部消息组件。</p>
 <p>但是这样就要考虑Push出去的消息是否丢失的问题（比如使用kafka就意味着配置ack=all以及retres=MAX_VALUE等等），最重要的是Push模式下，节点记录的最后一个成功消费的输入ID，必须保证是Push成功过的，只有做到这一点，Push模式才是可靠的。</p>
 <p>Pull模式就是计算节点需要自己实现一个输出流，供下游节点主动订阅，从可靠性以及低延迟的角度，显然还是Pull模式要更靠谱一些，Pull模式实现上难度更大，但这对我们来说不是问题。</p>
+<h2 id="vs">批量 vs 单条</h2>
+<p>吞吐量和低延迟是矛盾的，我们只能在其中进行权衡。通常的设计是把实时的处理变成定时的处理，但这样会给用户带来很卡顿的感觉。</p>
+<p>我们目前的实现机制能够做到自动适应不同负载，进行不同规模的批量执行。也就是低负载的时候，系统也以最低的延迟运行，用户能够得到实时用户体验。当负载逐渐增长时，吞吐量增大，延迟也会相应有所升高。我们测试在单币对每秒5w以下时，延迟都在100ms以内，对web用户来说，已经是接近实时的体验了。</p>
 <h2 id="_6">快照</h2>
 <p>为了加快故障恢复的时间，计算节点还是要对自身状态进行快照持久化。状态中需要包含对输入处理的当前进度，故障恢复时只需要从上次的进度继续执行即可。</p>
 <h2 id="_7">幂等</h2>
@@ -586,13 +616,13 @@ Coming soon...</p>
           </a>
         
         
-          <a href="../api/" title="API Docs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../rest-api.html" title="Restful API Docs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                API Docs
+                Restful API Docs
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
