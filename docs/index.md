@@ -20,3 +20,12 @@
 * [Restful API Docs](rest-api.html)
 * [WebSockets API Docs](ws.md)
 * [Benchmarks](benchmarks.md)
+
+### Contact
+
+<form action="https://formspree.io/yi.codeplayer@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Message">
+    <input type="email" name="_replyto" placeholder="Your Email">
+    <input type="submit" value="Send">
+</form>
+
