@@ -21,7 +21,7 @@
 * [WebSockets API Docs](ws.md)
 * [Benchmarks](benchmarks.md)
 
-### Contact
+## Contact
 
 <form action="https://formspree.io/yi.codeplayer@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Your Message">
