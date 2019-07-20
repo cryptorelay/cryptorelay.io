@@ -19,6 +19,7 @@
 * [Technical Architecture](architecture.md)
 * [Restful API Docs](rest-api.html)
 * [WebSockets API Docs](ws.md)
+* [GraphQL API Docs](graphql.md)
 * [Benchmarks](benchmarks.md)
 
 ## Contact
