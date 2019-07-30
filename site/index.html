@@ -204,6 +204,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#why-its-performance-is-so-great" title="Why It's performance is so great" class="md-nav__link">
     Why It's performance is so great
   </a>
@@ -323,6 +330,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#why-its-performance-is-so-great" title="Why It's performance is so great" class="md-nav__link">
     Why It's performance is so great
   </a>
@@ -368,9 +382,51 @@
 <li>Support <strong>perpetual</strong> future contract trading, embrace the future of crypto trading.</li>
 <li><strong>High availability</strong>. With the advanced architecture we engineered, we can provide high availability guarantees, it means no more service disruption and greater user experience.</li>
 </ul>
+<h2 id="features">Features</h2>
+<table>
+<thead>
+<tr>
+<th>币币内存撮合集群</th>
+<th>币币数据库清算系统</th>
+<th>永续合约处理集群</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>c++实现内存撮合，单币对10w qps</td>
+<td>与撮合引擎协议对接</td>
+<td>rust实现全内存高性能计算 5w qps</td>
+</tr>
+<tr>
+<td>分布式架构，币对横向扩展</td>
+<td>全内存实时行情计算和推送</td>
+<td>撮合清算爆仓统一处理，优先处理爆仓单，最小化系统风险</td>
+</tr>
+<tr>
+<td>数据持久化和主从复制</td>
+<td>自动分表，资产对账</td>
+<td>数据持久化和主从复制</td>
+</tr>
+<tr>
+<td>成交回报由下游pull，确保数据不丢失</td>
+<td>管理后台</td>
+<td>成交回报由下游pull，确保数据不丢失</td>
+</tr>
+<tr>
+<td>支持限价/市价/止盈止损</td>
+<td>restful/websocket API</td>
+<td>支持限价/市价</td>
+</tr>
+<tr>
+<td>redis协议的API，接入简单</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="why-its-performance-is-so-great">Why It's performance is so great</h2>
 <ul>
-<li>We develop the core part of system with highly optimized c/c++ code.</li>
+<li>We develop the core part of system with highly optimized c++/rust code.</li>
 <li>We exploited top-notch open source solutions.</li>
 <li>By customising redis internals, we made it a secret weapon for crypto exchange system, and a very core part of our architecture.</li>
 <li>With the deep understanding of trading logic underlies exchange, we designed a highly scalable, at the same time highly available architecture.</li>

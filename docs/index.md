@@ -16,7 +16,7 @@
 | 数据持久化和主从复制               | 自动分表，资产对账       | 数据持久化和主从复制                                 |
 | 成交回报由下游pull，确保数据不丢失 | 管理后台                 | 成交回报由下游pull，确保数据不丢失                   |
 | 支持限价/市价/止盈止损             | restful/websocket API    | 支持限价/市价                                        |
-| redis协议的API，接入简单           |                          |                                                      |
+| redis协议的API，接入简单           | 容器化编排部署，自动扩容 |                                                      |
 
 ## Why It's performance is so great
 
