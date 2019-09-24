@@ -8,3 +8,4 @@ nav:
     - WebSockets API Docs: ws.md
     - GraphQL API Docs: graphql.md
     - Benchmarks: benchmarks.md
+    - 永续合约: perpetual.md
