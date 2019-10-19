@@ -9,3 +9,4 @@ nav:
     - GraphQL API Docs: graphql.md
     - Benchmarks: benchmarks.md
     - 永续合约: perpetual.md
+    - Demo Exchange: https://exchange.cryptorelay.io
