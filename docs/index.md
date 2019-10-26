@@ -3,7 +3,7 @@
 ## It's time to upgrade your crypto exchange now!
 
 * **Highly scalable** architecture, Support **100k TPS** per trading pair, less than **10 ms latency**, very impressive data collected on commodity server hardware. It can save a lot of hardware costs for you.
-* High throughput low latency system is key to trading bots. With this abundant TPS you have, you can expand more **quantum trading** customers.
+* High throughput low latency system is key to trading bots. With this abundant TPS you have, you can expand more **quantitative trading** customers.
 * Support **perpetual** future contract trading, embrace the future of crypto trading.
 * **High availability**. With the advanced architecture we engineered, we can provide high availability guarantees, it means no more service disruption and greater user experience.
 

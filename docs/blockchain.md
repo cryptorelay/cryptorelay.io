@@ -2,6 +2,7 @@
 
 ## Customizable permissionless and permissioned blockchain
 
-* Highly secured implementatin with **Haskell**
+* Highly secured implementatin in **Haskell**
 * Provably secure consensus protocol (Ouroboros Genesis / Ouroboros BFT)
-* Modularised architecture
+* Customizable ledger logic
+* Simple database implemented in ledger logic
