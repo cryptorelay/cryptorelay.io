@@ -1,12 +1,15 @@
-site_name: Next Gen Crypto Exchange
+site_name: Blockchain Infrastructure
 theme:
   name: 'material'
 nav:
-    - Home: index.md
-    - Architecture: architecture.md
-    - Restful API Docs: rest-api.html
-    - WebSockets API Docs: ws.md
-    - GraphQL API Docs: graphql.md
-    - Benchmarks: benchmarks.md
-    - 永续合约: perpetual.md
-    - Demo Exchange: https://exchange.cryptorelay.io
+    - Crypto Exchange:
+      - Home: index.md
+      - Architecture: architecture.md
+      - Restful API Docs: rest-api.html
+      - WebSockets API Docs: ws.md
+      - GraphQL API Docs: graphql.md
+      - Benchmarks: benchmarks.md
+      - 永续合约: perpetual.md
+      - Demo: https://exchange.cryptorelay.io
+    - Wallet: wallet.md
+    - Blockchain: blockchain.md
