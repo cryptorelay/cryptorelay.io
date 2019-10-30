@@ -33,6 +33,11 @@
 * [GraphQL API Docs](graphql.md)
 * [Benchmarks](benchmarks.md)
 
+## Community
+
+* Telegram: https://t.me/cryptorelayio
+* Github: https://github.com/cryptorelay
+
 ## Contact
 
 <form action="https://formspree.io/yi.codeplayer@gmail.com" method="POST">
